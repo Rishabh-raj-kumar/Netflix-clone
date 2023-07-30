@@ -90,7 +90,7 @@ nav li:nth-child(2){
     cursor: pointer;
     background: red;
 }
-.block{
+.block,footer{
     border-top: 10px solid rgba(128, 128, 128, 0.351);
     width: 100vw;
     height: 80vh;
@@ -122,3 +122,59 @@ nav li:nth-child(2){
     font-size: clamp(1rem,2vw,2rem);
 }
 
+.Questions{
+    border-top: 10px solid rgba(128, 128, 128, 0.351);
+    width: 100vw;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+.p-20{
+    padding: 20px;
+}
+.Questions .quest-block{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 90%;
+    background: rgba(128, 128, 128, 0.659);
+}
+.quest-foot{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.quest-foot input{
+    background: rgba(128, 128, 128, 0.225);
+    border: 1px solid gray;
+    color: white;
+}
+.quest-foot p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem,2vw,2rem);
+}
+footer{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(206, 204, 204);
+}
+footer li{
+    padding: 3px;
+    font-family:'Segoe UI', Tahoma,Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem,1.5vw,1.5rem);
+    list-style: none;
+    text-decoration: underline;
+}
+
+@media screen and (max-width : 600px) {
+    .block{
+        text-align: center;
+        flex-direction: column;
+    }   
+}
